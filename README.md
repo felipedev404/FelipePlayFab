@@ -10,7 +10,7 @@ using FelipePlayFab;
 at the top.
 
 # Getting a Player ID:
-To retrieve the player's PlayFab ID, you can call FelipePlayFab.PlayerID(callback).
+To get the player's PlayFab ID, you can call FelipePlayFab.PlayerID(callback).
 For Example:
 ```
 FelipePlayFab.PlayerID(playerId =>
@@ -20,7 +20,7 @@ FelipePlayFab.PlayerID(playerId =>
 ```
 
 # Getting a Player Account Age:
-To calculate the player's account age, you can call FelipePlayFab.AccountAge(callback).
+To get the player's account age, you can call FelipePlayFab.AccountAge(callback).
 For Example:
 ```
 FelipePlayFab.AccountAge(accountAge =>
@@ -28,6 +28,33 @@ FelipePlayFab.AccountAge(accountAge =>
     Debug.Log("Account Age: " + accountAge.Days + " days");
 });
 ```
+# Getting a Player Login Count:
+To get the number of logins for the player, you can call FelipePlayFab.LoginCount(callback).
+For Example:
+```
+FelipePlayFab.LoginCount(loginCount =>
+{
+    Debug.Log("Login Count: " + loginCount);
+});
 
+```
+# Purchasing Items:
+To purchase items, you can call FelipePlayFab.PurchaseItem(itemId, onSuccess, onError).
+For Example:
+```
+string itemId = "YourItemIdHere";
+FelipePlayFab.PurchaseItem(itemId, 
+    onSuccess: result =>
+    {
+        Debug.Log("Item purchased successfully!");
+    },
+    onError: error =>
+    {
+        Debug.LogError("Failed to purchase item: " + error.ErrorMessage);
+    });
+
+```
+
+# PlayFabLogin
 
 
