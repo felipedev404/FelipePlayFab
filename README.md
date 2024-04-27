@@ -56,6 +56,7 @@ FelipePlayFab.PurchaseItem(itemId,
 ```
 
 # PlayFabLogin
+Base script credits: Ultrasnowy543
 
 ![Screenshot 2024-04-26 201140](https://github.com/felipedev404/FelipePlayFab/assets/166157806/2c6c0ddc-e4e4-47c5-86ed-273aa2977ccf)
 
